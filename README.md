@@ -1,4 +1,4 @@
-# TIG-stack-NL voor Raspberry Pi
+# TIG-stack voor Raspberry Pi (NL)
 
 Om een jump-start te kunnen maken met een netwerk monitoring tool op een RaspberyPi heb ik een RP-image in elkaar gezet waarop de software stack 'Telegraf-Influx-Grafana' geïnstalleerd en geconfigureerd is.
 
