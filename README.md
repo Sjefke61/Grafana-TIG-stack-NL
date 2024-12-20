@@ -17,6 +17,6 @@ Deze image is gemaakt met de pi-gen tool waarmee ook de officiële Raspberry Pi 
 
 # Installatie
 
-
+Gebruik de standaard 'Rapberry Pi imager' software (https://www.raspberrypi.com/software/) om de image te installeren. Kies bij 'Operating System' voor 'Use custom' en selecteer de gedownloade file 'GrafanaPi.img'.
 
 ![image](https://github.com/user-attachments/assets/8e4cd44c-cb97-47f5-9b36-7af5fc9aa03a)
