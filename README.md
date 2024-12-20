@@ -17,6 +17,11 @@ Deze image is gemaakt met de pi-gen tool waarmee ook de officiële Raspberry Pi 
 
 # Installatie
 
-Gebruik de 'Rapberry Pi imager' software (https://www.raspberrypi.com/software/) om de image te installeren. Kies bij 'Operating System' voor 'Use custom' en selecteer het gedownloade bestand 'GrafanaPi.img'.
+Gebruik de 'Rapberry Pi imager' software (https://www.raspberrypi.com/software/) om de image te installeren. Kies bij 'Operating System' voor 'Use custom' en selecteer het gedownloade bestand 'GrafanaPi.img'. Kies bij storage de SD-kaart van de Raspberry Pi.
 
 ![image](https://github.com/user-attachments/assets/8e4cd44c-cb97-47f5-9b36-7af5fc9aa03a)
+
+Kies bij 'OS customisation' voor 'EDIT STTINGS' en maak de gewenste aanpassingen:
+![image](https://github.com/user-attachments/assets/9f97031c-e19c-4012-b69f-917b7f1cf7c2)
+
+![image](https://github.com/user-attachments/assets/e11943c9-463b-47c7-9b6e-7c1656886a10)
