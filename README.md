@@ -4,7 +4,7 @@ Om een jump-start te kunnen maken met een monitoring tool op een RaspberyPi is d
 
 Deze image is gemaakt met de pi-gen tool waarmee ook de officiële Raspberry Pi images gemaakt worden. Het is een 'Raspberry Pi OS Lite (64-bit)' versie zonder desktop environment. Als extra is Telegraf-Influx-Grafana geinstalleerd en enkele hulpprogramma's. Tevens worden enkele configuratie aanpassingen gemaakt zodat er snel een werkende monitoring tool is.
 
-# Aanpassingen van de standaard image
+# Aanpassingen aan de standaard image
 
 - Keys en repository's van Grafana en Influxdata geïnstalleerd
 - Influxdb, Telegraf, Grafana en afhankelijkheden geïnstalleerd
