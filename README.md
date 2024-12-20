@@ -19,3 +19,4 @@ Deze image is gemaakt met de pi-gen tool waarmee ook de officiële Raspberry Pi 
 
 
 
+![image](https://github.com/user-attachments/assets/8e4cd44c-cb97-47f5-9b36-7af5fc9aa03a)
