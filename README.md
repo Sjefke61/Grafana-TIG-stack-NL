@@ -14,6 +14,7 @@ Deze image is gemaakt met de pi-gen tool waarmee ook de officiële Raspberry Pi 
 - snmpd geconfigureerd (community public)
 - Automatisch opstarten van Grafana, Telegraf en Influxdb
 - Locale NL geïnstalleerd
+- Automatisch updaten van de Raspberry Pi
 
 # Installatie
 
