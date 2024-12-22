@@ -54,7 +54,7 @@ Login met behulp van SSH in op de Raspberry PI. In het configuratiebestand /etc/
   name = "ping-4"
 ```
 
-Bijvoorbeeld toevoegen van een interface van de router:
+Bijvoorbeeld toevoegen van de interfaces van de router:
 ```
 [[inputs.snmp]]
   agents = ["udp://192.168.1.1"]
