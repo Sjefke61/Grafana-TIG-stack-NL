@@ -22,9 +22,21 @@ Gebruik de 'Rapberry Pi imager' software (https://www.raspberrypi.com/software/)
 - Kies bij storage de SD-kaart van de Raspberry Pi.
 - Kies bij 'OS customisation' voor 'EDIT STTINGS' en maak de gewenste aanpassingen (vergeet niet SSH te enablen).
 
-NAdat de Raspberry Pi is opgestart is moet het IP-nummer opgezocht worden die de Pi van de DHCP-server heeft gekregen. Dit kan op de volgende manieren:
+Nadat de Raspberry Pi is opgestart is moet het IP-nummer opgezocht worden welke de Pi van de DHCP-server heeft gekregen. Dit kan op de volgende manieren:
 - Kijk op de DHCP-server welk IP-nummer is uitgedeeld aan host-name 'Grafana'.
 - Beeldscherm aansluiten op de Raspberri Pi, inloggen, hostname -I
 - Netwerkscanner
 
 # Grafana
+
+Start nu grafana op in een webbrowser: http://<IP-nummer>:3000 en login met de default admin credentials.
+Configureer als eerste de datasource:
+- Menu -> Connections -> Data sources, kies InfluxDB, URL: http://localhost:8086 (zoals het voorbeeld), Database: grafana, Save & test
+
+Importeer het dashboard
+- Menu -> Dashboards -> New, Import -> Upload dashboard JSON file en kies het gedownloade bestand: Grafana-dashboard.jon
+
+Maak dit dashboard default
+- Meru -> Administration -> General -> Default preferences, Home Dashboard, kies Dashboards/Status, Save
+
+Kies voor 'Home' en het dashboard met twee voorbeeld grafieken zal verschijnen. Derze grafieken zijn hierna gemakkelijk te kopieëren en aan te passen.
