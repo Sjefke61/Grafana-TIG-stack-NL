@@ -29,7 +29,7 @@ Nadat de Raspberry Pi is opgestart is moet het IP-nummer opgezocht worden welke 
 
 # Grafana
 
-Start nu grafana op in een webbrowser: http://<IP-nummer>:3000 en login met de default admin credentials.
+Start Grafana op in een webbrowser: http://<IP-nummer>:3000 en login met de default admin credentials.
 Configureer als eerste de datasource:
 - Menu -> Connections -> Data sources, kies InfluxDB, URL: http://localhost:8086 (zoals het voorbeeld), Database: grafana, Save & test
 
