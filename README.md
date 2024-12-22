@@ -45,11 +45,11 @@ Kies voor 'Home' en het dashboard met twee voorbeeld grafieken zal verschijnen. 
 
 Login met behulp van SSH in op de Raspberry PI. In het configuratiebestand /etc/telegraf/telegraf.conf wordt bepaald welke gegevens worden toegevoegd aan de Influx database.
 bv toevoegen van een ping test naar IP-nummer 8.8.4.4:
-...
+```
 [[inputs.ping]]
   urls = ["8.8.4.4"]
   count = 1
   method = "exec"
 [inputs.ping.tags]
   name = "ping-4"
-...
+```
