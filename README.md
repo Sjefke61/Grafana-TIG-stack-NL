@@ -10,7 +10,7 @@ Deze image is gemaakt met de pi-gen tool waarmee ook de officiële Raspberry Pi 
 - Influxdb, Telegraf, Grafana en afhankelijkheden geïnstalleerd
 - snmpd en afhankelijkheden geïnstalleerd (monitoring eth0 van de Raspberry Pi)
 - Extra mibs geïnstalleerd (monitoring interfaces)
-- Telegraf geconfigureerd (Ping test naar 8.8.8.8 en monitor interface eth0)
+- Telegraf geconfigureerd (Ping test naar 8.8.8.8 en interfaces Raspberry Pi)
 - snmpd geconfigureerd (community public)
 - Automatisch opstarten van Grafana, Telegraf en Influxdb
 - Locale NL geïnstalleerd
