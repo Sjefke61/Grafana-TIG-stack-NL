@@ -2,7 +2,7 @@
 
 Om een jump-start te kunnen maken met deze monitoring tool, een Raspberry Pi image waarop de software stack 'Grafana-Influx-Telegraf' is geïnstalleerd en geconfigureerd.
 
-Deze image is gemaakt met de pi-gen tool waarmee ook de officiële Raspberry Pi images gemaakt worden. Het is een 'Raspberry Pi OS Lite (64-bit)' versie zonder desktop environment. Als extra is Telegraf-Influx-Grafana geinstalleerd en enkele hulpprogramma's. Tevens worden enkele configuratie aanpassingen gemaakt zodat er snel een werkende monitoring tool is.
+Deze image is gemaakt met de pi-gen tool waarmee ook de officiële Raspberry Pi images gemaakt worden. Het is een 'Raspberry Pi OS Lite (64-bit)' versie zonder desktop environment. Als extra is Telegraf-Influx-Grafana geinstalleerd en enkele hulpprogramma's. Tevens worden enkele configuratie aanpassingen gemaakt zodat er snel een werkende monitoring tool beschikbaar is.
 
 # Aanpassingen aan de standaard image
 
