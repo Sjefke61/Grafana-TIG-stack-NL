@@ -21,3 +21,10 @@ Gebruik de 'Rapberry Pi imager' software (https://www.raspberrypi.com/software/)
 - Kies bij 'Operating System' voor 'Use custom' en selecteer het gedownloade bestand 'GrafanaPi.img'.
 - Kies bij storage de SD-kaart van de Raspberry Pi.
 - Kies bij 'OS customisation' voor 'EDIT STTINGS' en maak de gewenste aanpassingen (vergeet niet SSH te enablen).
+
+NAdat de Raspberry Pi is opgestart is moet het IP-nummer opgezocht worden die de Pi van de DHCP-server heeft gekregen. Dit kan op de volgende manieren:
+- Kijk op de DHCP-server welk IP-nummer is uitgedeeld aan host-name 'Grafana'.
+- Beeldscherm aansluiten op de Raspberri Pi, inloggen, hostname -I
+- Netwerkscanner
+
+# Grafana
