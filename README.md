@@ -34,9 +34,21 @@ Configureer als eerste de datasource:
 - Menu -> Connections -> Data sources, kies InfluxDB, URL: http://localhost:8086 (zoals het voorbeeld), Database: grafana, Save & test
 
 Importeer het dashboard
-- Menu -> Dashboards -> New, Import -> Upload dashboard JSON file en kies het gedownloade bestand: Grafana-dashboard.jon
+- Menu -> Dashboards -> New, Import -> Upload dashboard JSON file en kies het gedownloade bestand: Grafana-dashboard.json
 
 Maak dit dashboard default
 - Meru -> Administration -> General -> Default preferences, Home Dashboard, kies Dashboards/Status, Save
 
 Kies voor 'Home' en het dashboard met twee voorbeeld grafieken zal verschijnen. Derze grafieken zijn hierna gemakkelijk te kopieëren en aan te passen.
+
+# Telegraf
+
+Login met behulp van SSH in op de Raspberry PI. In het configuratiebestand /etc/telegraf/telegraf.conf wordt bepaald welke gegevens worden toegevoegd aan de Influx database.
+bv toevoegen van een ping test naar IP-nummer 8.8.4.4:
+
+[[inputs.ping]]
+  urls = ["8.8.4.4"]
+  count = 1
+  method = "exec"
+[inputs.ping.tags]
+  name = "ping-4"
