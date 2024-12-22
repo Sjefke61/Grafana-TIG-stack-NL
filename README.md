@@ -43,8 +43,7 @@ Kies voor 'Home' en het dashboard met twee voorbeeld grafieken zal verschijnen. 
 
 # Telegraf
 
-Login met behulp van SSH in op de Raspberry PI. In het configuratiebestand /etc/telegraf/telegraf.conf wordt bepaald welke gegevens worden toegevoegd aan de Influx database.
-bv toevoegen van een ping test naar IP-nummer 8.8.4.4:
+Login met behulp van SSH in op de Raspberry PI. In het configuratiebestand /etc/telegraf/telegraf.conf wordt bepaald welke gegevens worden toegevoegd aan de Influx database. Bijvoorbeeld toevoegen van een ping test naar IP-nummer 8.8.4.4:
 ```
 [[inputs.ping]]
   urls = ["8.8.4.4"]
@@ -53,3 +52,26 @@ bv toevoegen van een ping test naar IP-nummer 8.8.4.4:
 [inputs.ping.tags]
   name = "ping-4"
 ```
+
+Bijvoorbeeld toevoegen van een interface van de router:
+```
+[[inputs.snmp]]
+  agents = ["udp://192.168.1.1"]
+  version = 2
+  community = "public"
+  path = ["/usr/share/snmp/mibs"]
+
+[[inputs.snmp.table]]
+    oid = "IF-MIB::ifTable"
+    name = "interface"
+    inherit_tags = ["source"]
+
+  [[inputs.snmp.table.field]]
+      oid = "IF-MIB::ifDescr"
+      name = "ifDescr"
+      is_tag = true
+```
+
+Om de aanpassingen van telegraf.conf actief te maken: sudo service telegraf restart
+
+Hierna kunnen binnen Grafana de grafieken toegevoegd worden.
